@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMOA</title>
+    <link rel="stylesheet" href="/style.css">
+      <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/64d06571-84b1-46ea-b7f8-789be4d4357c/pokepoke.png?v=1653305502391">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="https://animoasa.glitch.me/"><span class="title">Animoa</span></a> (Genre List)
+
+
+        <ul class="navigation">
+            <li class="tab"><a href="/genre/anime-series/">Series</a></li>
+            <li class="tab"><a href="/genre/ongoing-anime">Ongoing</a></li>
+            <li class="tab"><a href="/genre/anime-movie">Movies</a></li>
+            <li class="tab"><a href="/list/genre">Genre</a></li>
+        </ul>
+
+
+    </div>
+
+
+    <div class="container-wrapper">
+        <div class="genrelist">
+           genrelistp        </div>
+        <form class="form-wrapper" action="/search/" method="get" id="my-form">
+            <input type="text" name="reference-number" id="search" placeholder="Search for..." required>
+            <input type="submit" value="go" id="submit">
+        </form>
+
+        <div class="footer">
+            <center>by <a href="http://fb.com/addstring" target="_blank">willy</a></center>
+        </div>
+    </div>
+
+    <script>
+        var form = document.querySelector("#my-form"),
+            text_field = document.querySelector("#search");
+
+        function submitHandler() {
+            var url = form.action + text_field.value;
+            window.open(url);
+            return false;
+        }
+        form.onsubmit = submitHandler;
+    </script>
+
+</body>
+
+</html>

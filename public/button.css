@@ -1,0 +1,77 @@
+.shortc-button {
+    cursor: pointer;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    font-weight: normal;
+    outline: none;
+    position: relative;
+    text-decoration: none !important;
+    font-size: 11px;
+    min-width: 80px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 30px;
+    opacity: 0.85;
+    transition: all .5s
+}
+
+.rtl .shortc-button {
+    margin-right: 0;
+    margin-left: 5px
+}
+
+.shortc-button:not(.button) {
+    color: #fff !important
+}
+
+.shortc-button.red {
+    background-color: #B02B2C
+}
+
+.shortc-button.green {
+    background-color: #83a846
+}
+
+.shortc-button.blue {
+    background-color: #7bb0e7
+}
+
+.shortc-button.orange {
+    background-color: #edae44
+}
+
+.shortc-button.pink {
+    background-color: #d65799
+}
+
+.shortc-button.purple {
+    background-color: #745f7e
+}
+
+.shortc-button.black {
+    background-color: #2c2c2c
+}
+
+.shortc-button.white {
+    background-color: #fcfcfc;
+    color: #666666 !important
+}
+
+.shortc-button.gray {
+    background: #DADADA;
+    color: #333333 !important
+}
+
+.shortc-button.medium {
+    padding: 13px 25px;
+    min-width: 90px;
+    font-size: 15px
+}
+
+.shortc-button.big {
+    padding: 15px 30px;
+    min-width: 140px;
+    font-size: 17px
+}
